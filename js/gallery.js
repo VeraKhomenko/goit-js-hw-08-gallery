@@ -65,11 +65,11 @@ function toggleLargeImage(event) {
         if (event.key === 'ArrowRight') {
           if (index + 1 <= images.length) {
             nextImage = images[index + 1];
-          }
+          } else return;
         } else {
           if (index - 1 >= 0) {
             nextImage = images[index - 1];
-          }
+          } else return;
         }
       }
     }
